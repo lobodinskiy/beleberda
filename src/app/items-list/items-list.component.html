@@ -4,12 +4,13 @@
     <input
       type="text"
       [(ngModel)]="searchText"
+      (ngModelChange)="onSearchChange()"
       placeholder="Введіть текст для фільтрації" />
   </label>
 </div>
 
 <app-item-card
-  *ngFor="let item of filteredItems"
+  *ngFor="let item of items"
   [item]="item"
   (selected)="onItemSelected($event)">
 </app-item-card>
