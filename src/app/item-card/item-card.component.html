@@ -1,9 +1,12 @@
 <div class="card" [ngClass]="item.priority">
   <div class="title-row">
     <h3>{{ item.title }}</h3>
-
     <span *ngIf="item.isFeatured" class="badge">FEATURED</span>
   </div>
 
   <p>{{ item.description }}</p>
+
+  <button type="button" class="btn" (click)="onDetailsClick()">
+    Детальніше
+  </button>
 </div>
