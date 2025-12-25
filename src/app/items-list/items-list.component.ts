@@ -12,8 +12,26 @@ import { ItemCardComponent } from '../item-card/item-card.component';
 })
 export class ItemsListComponent {
   items: Item[] = [
-    { id: 1, title: 'Item One', description: 'Description for item one' },
-    { id: 2, title: 'Item Two', description: 'Description for item two' },
-    { id: 3, title: 'Item Three', description: 'Description for item three' },
+    {
+      id: 1,
+      title: 'Item One',
+      description: 'Description for item one',
+      isFeatured: true,
+      priority: 'high',
+    },
+    {
+      id: 2,
+      title: 'Item Two',
+      description: 'Description for item two',
+      isFeatured: false,
+      priority: 'normal',
+    },
+    {
+      id: 3,
+      title: 'Item Three',
+      description: 'Description for item three',
+      isFeatured: false,
+      priority: 'low',
+    },
   ];
 }

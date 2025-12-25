@@ -1,9 +1,11 @@
 import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { Item } from '../shared/models/item.model';
 
 @Component({
   selector: 'app-item-card',
   standalone: true,
+  imports: [CommonModule],
   templateUrl: './item-card.component.html',
   styleUrls: ['./item-card.component.css'],
 })

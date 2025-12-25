@@ -4,3 +4,29 @@
   border-radius: 4px;
   margin-bottom: 10px;
 }
+
+.title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badge {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid #999;
+}
+
+.high {
+  border-left: 6px solid #d33;
+}
+
+.normal {
+  border-left: 6px solid #333;
+}
+
+.low {
+  border-left: 6px solid #3a3;
+}
