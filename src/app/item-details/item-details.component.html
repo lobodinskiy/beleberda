@@ -1,0 +1,14 @@
+<a [routerLink]="['/items']">← Назад до списку</a>
+
+<div *ngIf="item$ | async as item; else notFound" class="details">
+  <h2>{{ item.title }}</h2>
+  <p>{{ item.description }}</p>
+
+  <p><b>ID:</b> {{ item.id }}</p>
+  <p><b>Priority:</b> {{ item.priority }}</p>
+  <p *ngIf="item.isFeatured"><b>FEATURED</b></p>
+</div>
+
+<ng-template #notFound>
+  <p>Елемент не знайдено.</p>
+</ng-template>

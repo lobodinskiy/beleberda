@@ -7,11 +7,5 @@
 
   <p>{{ item.description }}</p>
 
-  <!-- КНОПКА, ЯКА ЕМІТИТЬ Item -->
-  <button
-    type="button"
-    class="btn"
-    (click)="onDetailsClick()">
-    Детальніше
-  </button>
-</div>
+  <a class="btn" [routerLink]="['/items', item.id]">Детальніше</a>
+
