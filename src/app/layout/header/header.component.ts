@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css',
 })
 export class HeaderComponent {
-  appName = 'My Angular App';
+title = 'My Angular App';
 }
