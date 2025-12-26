@@ -3,5 +3,5 @@ export interface Item {
   title: string;
   description: string;
   isFeatured: boolean;
-  priority: 'low' | 'normal' | 'high';
+  priority: 'high' | 'medium' | 'low';
 }

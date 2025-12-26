@@ -1,15 +1,6 @@
-<div class="toolbar">
-  <label>
-    Пошук:
-    <input
-      type="text"
-      [(ngModel)]="searchText"
-      placeholder="Введіть текст для фільтрації" />
-  </label>
-</div>
+<h2>Головна сторінка</h2>
 
 <app-item-card
-  *ngFor="let item of filteredItems"
-  [item]="item"
-  (selected)="onItemSelected($event)">
+  *ngFor="let item of items"
+  [item]="item">
 </app-item-card>
