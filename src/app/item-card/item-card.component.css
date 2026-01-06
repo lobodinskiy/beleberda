@@ -19,14 +19,6 @@
   border: 1px solid #999;
 }
 
-.high {
-  border-left: 6px solid #d33;
-}
-
-.normal {
-  border-left: 6px solid #333;
-}
-
-.low {
-  border-left: 6px solid #3a3;
-}
+.high { border-left: 6px solid #d33; }
+.normal { border-left: 6px solid #333; }
+.low { border-left: 6px solid #3a3; }
